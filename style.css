@@ -50,3 +50,37 @@ html { font-size: 62.5%; }
     width: 25.5px;
     display: block;
 }
+
+/* main */
+#main {
+    height:500px ;
+    position: relative;
+}
+
+.main-img img {
+    width: 100%;
+}
+
+.main-textbox {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.702);
+    width: 492px;
+    height: 210px;
+    top: 152px;
+    left: 0;
+}
+
+.main-textbox-content {
+    padding:19px 0 0 99px;
+}
+
+.main-textbox-content p {
+    font-size: 2.5rem;
+}
+
+.main-textbox-content h1 {
+    font-size: 4rem;
+    line-height:calc(60/40);
+    color:#0D96A0;
+    padding-top: 3px;
+}
