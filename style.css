@@ -7,28 +7,42 @@ body {
     font-family: "Noto Sans JP", sans-serif;
     background-color: #FFFFFF; 
     line-height:calc(33/18);
-    letter-spacing: 1;   
-}
-
-p,h1,h2,h3,h4,a,li {
-    margin: 0;
+    letter-spacing: 0;   
     color: #505050;
 }
 
-html { font-size: 62.5%; }
+html { 
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
+}
 
 /* 共通 */
+#greeting,
+#strength,
+#service,
+#access,
+#contact{
+    padding-top: 60px;
+}
 
+.title {
+    padding-bottom: 43px;
+}
 
 
 /* header */
+header {
+    height: 50px;
+}
+
 .header-content {
-    max-width: 920px;
+    max-width: 1080px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 100px;
-    padding: 10px 0 8px 0;
+    padding: 0 60px 0 100px;
+    margin: 0 auto;
 }
 
 .header-title  {
@@ -44,6 +58,13 @@ html { font-size: 62.5%; }
     gap: 10px;
     font-size: 1.4rem;
     line-height:calc(33/14);
+    padding-top: 5px;
+}
+
+.nav-list a{
+    display: flex;
+    align-items: center;
+    height: 50px;
 }
 
 .foot-print img{
@@ -83,4 +104,78 @@ html { font-size: 62.5%; }
     line-height:calc(60/40);
     color:#0D96A0;
     padding-top: 3px;
+}
+
+/* inner */
+.inner {
+    padding-inline: 30px;
+}
+
+/* greeting */
+#greeting {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#greeting h2 {
+    font-size: 3rem;
+    line-height:calc(50/30);
+    color:#0D96A0;
+}
+
+#greeting p {
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding-top: 15px;
+}
+
+/* bg-green */
+.bg-green {
+    background-color: rgba(13, 150, 160, 0.1);;
+}
+
+/* 足跡-title */
+.title {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h3 {
+    font-size: 2.5rem;
+}
+
+.title img{
+    height: 25px;
+    display: block;
+}
+
+/* strength */
+.strength-unit {
+    max-width: 880px;
+    display: flex;
+    gap: 5.0%;
+    margin: 0 auto;
+}
+
+  /* text */
+.strength-text {
+    flex: 1;
+}
+
+.strength-text h4 {
+    font-size: 2.2rem;
+    line-height:calc(33/22);
+    padding-top: 46px;
+}
+
+.strength-text p {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+  /* img */
+.strength-img {
+    width: 50%;
 }
