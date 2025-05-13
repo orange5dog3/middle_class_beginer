@@ -141,7 +141,7 @@ header {
     position: absolute;
     display: block;
     width: 83.75px;
-    left: 920px;
+    left: 85%;
     top: 173px;
 }
 
@@ -250,4 +250,137 @@ header {
     max-width: 880px;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    padding-top: -3px;
+}
+
+td {
+    vertical-align: middle;
+    padding-top: 11px;
+    padding-bottom: 17px;
+}
+
+
+  /* 線 */
+tr {
+    border-bottom: 1px solid #707070;
+}
+
+tr:first-child {
+    border-top: 1px solid #707070;
+}
+
+  /* 文字大きさ色 */
+.information-day {
+    font-size: 1.7rem;
+    line-height:calc(25/17);
+    padding-left: 18.5px;
+}
+
+.information-title {
+    font-size: 2rem;
+    line-height:calc(25/20);
+    color: #0D96A0;
+    padding-left: 25px;
+}
+
+.information-text {
+    font-size: 1.7rem;
+    line-height:calc(30/17);
+    font-weight: 500;    
+    padding-left: 50px;
+    padding-right: 93px;
+}
+
+/* access */
+#access {
+    margin-top: 6px;
+}
+
+.access-content {
+    max-width: 880px;
+    display: flex;
+    gap: 5.2%;
+    margin: 0 auto;
+}
+
+  /* img */
+.access-img {
+    width: 50%;
+}
+
+  /* text */
+.access-text {
+    flex: 1;
+}
+
+.access-text h4 {
+    font-size: 2.2rem;
+    line-height:calc(33/22);
+    margin-top: -2px;
+}
+
+.access-text {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height:calc(27/18);
+}
+
+.access-address p{
+    padding-top: 15px;
+}
+
+.access-tel {
+    padding-top: 14px;
+}
+
+.tel-green {
+    color:#0D96A0;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height:calc(40/25);
+}
+
+.access-email {
+    padding-top: 7px;
+    padding-bottom: 27px;
+}
+
+.underline {
+    border: 1px solid #707070;
+}
+
+.access-workday {
+    padding-top: 19px;
+    padding-left: 5px;
+}
+
+.access-no-holiday {
+    padding-top: 14px;
+    padding-left: 5px;
+    padding-bottom: 19px;
+}
+
+/* contact */
+#contact p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height:calc(30/17);
+}
+
+  /* form */
+.contact-form {
+    max-width: 880px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea{
+      border: none;
+      padding: 16px;
 }

@@ -161,29 +161,29 @@
         <div class="information-content">
             <table>
                 <tr>
-                    <td>0000.00.00</td>
-                    <td>去勢手術の助成金</td>
-                    <td>長崎県より犬猫去勢手術の助成金制度が導入されました。</td>
+                    <td class="information-day">0000.00.00</td>
+                    <td class="information-title">去勢手術の助成金</td>
+                    <td class="information-text">長崎県より犬猫去勢手術の助成金制度が導入されました。</td>
                 </tr>
                 <tr>
-                    <td>0000.00.00</td>
-                    <td>往診の範囲が拡大</td>
-                    <td>往診の範囲を長崎市内から長崎県内まで拡大しました。</td>
+                    <td class="information-day">0000.00.00</td>
+                    <td class="information-title">往診の範囲が拡大</td>
+                    <td class="information-text">往診の範囲を長崎市内から長崎県内まで拡大しました。</td>
                 </tr>
                 <tr>
-                    <td>0000.00.00</td>
-                    <td>新年のご挨拶</td>
-                    <td>謹賀新年。今年もよろしくお願いいたします。</td>
+                    <td class="information-day">0000.00.00</td>
+                    <td class="information-title">新年のご挨拶</td>
+                    <td class="information-text">謹賀新年。今年もよろしくお願いいたします。</td>
                 </tr>
                 <tr>
-                    <td>0000.00.00</td>
-                    <td>年末年始の診療</td>
-                    <td>当院では年末年始も24時間休まず診療しております。</td>
+                    <td class="information-day">0000.00.00</td>
+                    <td class="information-title">年末年始の診療</td>
+                    <td class="information-text">当院では年末年始も24時間休まず診療しております。</td>
                 </tr>
                 <tr>
-                    <td>0000.00.00</td>
-                    <td>開院11周年</td>
-                    <td>当院開院11周年を迎えることとなりました。</td>
+                    <td class="information-day">0000.00.00</td>
+                    <td class="information-title">開院11周年</td>
+                    <td class="information-text">当院開院11周年を迎えることとなりました。</td>
                 </tr>
             </table>
         </div>
@@ -204,9 +204,11 @@
             <div class="access-text">
                 <h4>滑石きたむら動物病院</h4>
                 <div class="access-address"><p>〒852-8065　長崎県長崎市横尾○丁目○-○</p></div>
-                <div class="access-tel"><p>電話：<span class="green">000-0000-0000</span></p></div>
+                <div class="access-tel"><p>電話：<span class="tel-green">000-0000-0000</span></p></div>
+                <div class="access-email"><p>メール：info@example.com</p></div>
                 <div class="underline"></div>
-                <div class="access-workday"><p>診療時間：24時間365日<br>休診日：なし</p></div>
+                <div class="access-workday"><p>診療時間：24時間365日</p></div>
+                <div class="access-no-holiday"><p>休診日：なし</p></div>
                 <div class="underline"></div>
             </div>
         </div>
@@ -221,12 +223,30 @@
             お問い合わせいただいてから3日以内の変身となります。</p>
         <div class="contact-form">
             <form>
-                <label for="name">お名前</label>
-                <input type="text" name="name" id="name">
-                <label for="email">メールアドレス</label>
-                <input type="email" name="email" id="email">
-                <label for="message">内容</label>
-                <textarea name="message" id="message"></textarea>
+                <tr>
+                    <td>
+                        <label for="name">お名前</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>   
+                        <label for="email">メールアドレス</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="message">内容</label>
+                    </td>
+                    <td>
+                        <textarea name="message" id="message"></textarea>
+                    </td>
+                </tr>
             </form>
             <button type="submit">送信</button>
         </div>
