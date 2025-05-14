@@ -19,16 +19,6 @@ html {
 /*----------
  共通 
  ----------*/
-#greeting,
-#strength,
-#service,
-#information,
-#access,
-#contact{
-    padding-top: 60px;
-    padding-bottom: 62px;
-}
-
 .title {
     padding-bottom: 43px;
 }
@@ -79,6 +69,17 @@ header {
 .foot-print img{
     width: 25.5px;
     display: block;
+}
+
+@media screen and (max-width:767px) {
+    .header-title {
+        justify-content:flex-start;
+        padding-left: 20px;
+    }
+    
+    .nav-list {
+        display: none;
+    }
 }
 
 /*----------
@@ -177,8 +178,12 @@ header {
 
 /*----------
  strength 
- ----------*/
-.strength-flex {
+----------*/
+#strength {
+    padding: 60px 0;
+}
+
+ .strength-flex {
     display: flex;
     flex-direction:column;
     gap: 45px;
@@ -222,7 +227,7 @@ header {
  service 
  ----------*/
 #service {
-    margin-top: -2px;/* 微調整 */
+    padding: 60px 0;
 }
 
 
@@ -255,7 +260,7 @@ header {
 
 /* information */
 #information {
-    margin-top: -4px;/* 微調整 */
+    padding: 58px 0 68px;
 }
 
 .information-flex {
@@ -308,7 +313,7 @@ tr:first-child {
  access 
  ----------*/
 #access {
-    margin-top: 6px;
+    padding: 60px;
 }
 
 .access-flex {
@@ -377,7 +382,11 @@ tr:first-child {
 
 /*----------
  contact 
- ----------*/
+----------*/
+#contact {
+    padding: 60px 0 82px;
+}
+
 #contact p{
     text-align: center;
     font-weight: 500;
@@ -439,4 +448,64 @@ button {
 button:hover {
     background-color: #FFFFFF;
     color: #0D96A0;
+}
+
+/*----------
+ footer 
+ ----------*/
+footer {
+    background-color: #505050;
+    color: #FFFFFF;
+    padding: 65px 0 67px;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 auto;
+    text-align: center;
+}
+
+.footer-nav-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+.footer-nav-list ul {
+    display: flex;
+    gap: 14px;
+}
+
+.footer-nav-list a {
+    font-size: 2rem;
+    line-height:calc(33/20);
+}
+
+.footer-underline {
+    border: 1px solid #FFFFFF;
+    width: 740px;
+    display: block;
+    margin: 0 auto;
+}
+
+.copylite {
+    font-size: 2rem;
+    line-height:calc(33/20);
+    padding-top: 27px;
+}
+
+.icon-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding-top: 8px;
+}
+
+.icon-img {
+    width: 22px;
 }
