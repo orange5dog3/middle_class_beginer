@@ -19,12 +19,48 @@ html {
 /*----------
  共通 
  ----------*/
+
+/* 足跡-title */
 .title {
-    padding-bottom: 43px;
+    padding-bottom: 37px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-.lowercase {
-    text-transform: lowercase;
+.title h3 {
+    font-size: 2.5rem;
+}
+
+.title img{
+    height: 25px;
+    display: block;
+}
+
+/* inner */
+.inner {
+    max-width: 1020px;
+    padding-inline: 30px;
+    margin: 0 auto;
+}
+
+
+/* bg-green */
+.bg-green {
+    background-color: rgba(13, 150, 160, 0.1);;
+}
+
+@media screen and (min-width:768px) {
+    .pc_none {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .sp_none {
+        display: none;
+    }
 }
 
 /*----------
@@ -72,9 +108,14 @@ header {
 }
 
 @media screen and (max-width:767px) {
+    .header-content {
+        padding: 0;
+        margin-left: 20px;
+    }
+
     .header-title {
-        justify-content:flex-start;
-        padding-left: 20px;
+        font-size: 2.0rem;
+        line-height:calc(33/20);
     }
     
     .nav-list {
@@ -120,16 +161,45 @@ header {
     padding-top: 3px;
 }
 
-/* inner */
-.inner {
-    padding-inline: 30px;
+@media screen and (max-width:767px) {
+    #main {
+        height: 550px;
+    }
+
+    .main-img img {
+        height: 550px;
+    }
+
+    .main-textbox {
+        width: 311px;
+        height: 148px;
+        top: 402px;
+        left: 0;
+    }
+
+    .main-textbox-content {
+        padding:15px 0 0 20px;
+    }
+
+    .main-textbox-content p {
+        font-size: 2.0rem;
+    }
+
+    .main-textbox-content h1 {
+        font-size: 3.0rem;
+        line-height:calc(40/30);
+        padding-top: 3px;
+    }
+    
 }
+
+
 
 /*----------
  greeting 
  ----------*/
 #greeting {
-    padding: 60px 0;
+    padding:60px 0;
     text-align: center;
     position: relative;
 }
@@ -150,30 +220,32 @@ header {
     position: absolute;
     display: block;
     width: 83.75px;
-    left: 85%;
+    left: 87%;
     top: 173px;
 }
 
-/* bg-green */
-.bg-green {
-    background-color: rgba(13, 150, 160, 0.1);;
-}
+@media screen and (max-width:767px) {
+    #greeting {
+        padding: 49px 20px 40px;
+    }
+    
+    #greeting h2 {
+        font-size: 2.5rem;
+        line-height:calc(35/25);
+    }
 
-/* 足跡-title */
-.title {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
+    .foot-print2 {
+        width: 68.35px;
+        left: 74%;
+        top: 275px;
+    }
 
-.title h3 {
-    font-size: 2.5rem;
-}
-
-.title img{
-    height: 25px;
-    display: block;
+    #greeting p {
+        font-size: 1.6rem;
+        line-height:calc(30/16);
+        text-align: left;
+        padding-top:17px;
+    }
 }
 
 /*----------
@@ -183,10 +255,11 @@ header {
     padding: 60px 0;
 }
 
- .strength-flex {
+.strength-flex {
     display: flex;
     flex-direction:column;
     gap: 45px;
+    padding-top: 6px;
 }
 
 
@@ -223,6 +296,40 @@ header {
     width: 50%;
 }
 
+@media screen and (max-width:767px) {
+    #strength {
+        padding:45px 20px;
+    }
+
+    .strength-flex {
+        gap: 40px;
+    }
+    
+    .strength-unit {
+        flex-direction: column-reverse;
+    }
+
+    .strength-text h4 {
+        text-align: center;
+        font-size: 2.0rem;
+        line-height:calc(30/20);
+        padding-top: 22px;
+    }
+
+    .strength-text p {
+        font-size: 1.6rem;
+        line-height:calc(30/16);
+        padding-top: 8px;
+    }
+
+    .strength-img {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+}
+
 /*----------
  service 
  ----------*/
@@ -237,6 +344,7 @@ header {
     gap: 5.6%;
     justify-content: center;
     margin: 0 auto;
+    padding-top: 7px;
 }
 
 .service-item {
@@ -268,13 +376,13 @@ header {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding-top: -3px;
+    padding-top: 2px;
 }
 
 td {
     vertical-align: middle;
-    padding-top: 11px;
-    padding-bottom: 17px;
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
 }
 
 
@@ -313,7 +421,7 @@ tr:first-child {
  access 
  ----------*/
 #access {
-    padding: 60px;
+    padding: 60px 0;
 }
 
 .access-flex {
@@ -331,6 +439,7 @@ tr:first-child {
   /* text */
 .access-text {
     flex: 1;
+    padding-top: 4px;
 }
 
 .access-text h4 {
@@ -369,6 +478,12 @@ tr:first-child {
     border: 1px solid #707070;
 }
 
+@media screen and (max-width:767px) {
+    .underline {
+        max-width: 375px;
+    }
+}
+
 .access-workday {
     padding-top: 19px;
     padding-left: 5px;
@@ -384,7 +499,7 @@ tr:first-child {
  contact 
 ----------*/
 #contact {
-    padding: 60px 0 82px;
+    padding: 64px 0 82px;
 }
 
 #contact p{
@@ -392,7 +507,7 @@ tr:first-child {
     font-weight: 500;
     font-size: 1.7rem;
     line-height:calc(30/17);
-    margin-top: -25px;
+    margin-top: -18px;
 }
 
   /* form */
@@ -429,6 +544,7 @@ tr:first-child {
     height: 300px;
 }
 
+
   /* button */
 button {
     width: 200px;
@@ -442,7 +558,7 @@ button {
     display: block;
     text-align: center;
     margin:42px auto 0;
-    padding-bottom: 2px;
+    padding-bottom: 3px;
 }
 
 button:hover {
@@ -491,7 +607,13 @@ footer {
     margin: 0 auto;
 }
 
-.copylite {
+@media screen and (max-width:767px) {
+    .footer-underline {
+        max-width: 375px;
+    }
+}
+
+.copyright {
     font-size: 2rem;
     line-height:calc(33/20);
     padding-top: 27px;
