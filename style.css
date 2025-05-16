@@ -794,14 +794,23 @@ footer {
 
 @media screen and (max-width:767px) {
     .footer-underline {
-        max-width: 315px;
+        max-width: 335px;
+    }
+
+    footer {
+        padding: 45px 0;
     }
 
 
     .footer-nav-list {
-        flex-wrap: wrap;
         padding-bottom: 20px;
         gap: 10px;
+    }
+
+    .footer-nav-list ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0 20px;
     }
 
     .footer-nav-list a {
@@ -812,6 +821,10 @@ footer {
     .copyright {
         font-size: 1.6rem;
         line-height:calc(33/16);
-        padding-top: 27px;
+        padding-top: 13px;
+    }
+
+    .icon-list {
+        padding-top: 30px;
     }
 }
