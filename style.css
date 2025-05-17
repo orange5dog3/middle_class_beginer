@@ -224,13 +224,13 @@ header {
     position: absolute;
     display: block;
     width: 83.75px;
-    left: 87%;
-    top: 173px;
+    left: 85%;
+    top: 61%;
 }
 
 @media screen and (max-width:767px) {
     #greeting {
-        padding: 49px 20px 40px;
+        padding: 49px 0 40px;
     }
     
     #greeting h2 {
@@ -241,7 +241,7 @@ header {
     .foot-print2 {
         width: 68.35px;
         left: 74%;
-        top: 275px;
+        top: 71%;
     }
 
     #greeting p {
@@ -312,6 +312,7 @@ header {
     
     .strength-unit {
         flex-direction: column-reverse;
+        margin: 0;
     }
 
     .strength-text h4 {
@@ -329,11 +330,26 @@ header {
 
     .strength-img {
         width: 100%;
-        justify-content: center;
     }
 
-
+    .strength-img img {
+        width: 100%;
+    }
 }
+
+@media screen and (min-width:376px) and (max-width:767px){
+    .middle_none1 {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:953px){
+    .middle_none2 {
+        display: none;
+    }
+}
+
+
 
 /*----------
  service 
@@ -396,6 +412,16 @@ header {
         font-size: 1.6rem;
         line-height:calc(30/16);
         padding-top: 6px;
+    }
+
+    .service-item img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) and (min-width:519px){
+    .service-text p {
+        text-align: center;
     }
 }
 
@@ -486,7 +512,7 @@ tr:first-child {
  access 
  ----------*/
 #access {
-    padding: 60px 0;
+    padding: 60px 0 65px;
 }
 
 .access-flex {
@@ -574,6 +600,7 @@ tr:first-child {
         max-width: 375px;
     }
 
+
     .access-address p{
         font-size: 1.6rem;
         line-height:calc(24/16);
@@ -617,7 +644,7 @@ tr:first-child {
  contact 
 ----------*/
 #contact {
-    padding: 64px 0 82px;
+    padding: 60px 0 82px;
 }
 
 #contact p{
@@ -741,6 +768,7 @@ footer {
 }
 
 .footer-flex {
+    max-width: 740px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -767,7 +795,7 @@ footer {
 
 .footer-underline {
     border: 1px solid #FFFFFF;
-    width: 740px;
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -793,8 +821,8 @@ footer {
 }
 
 @media screen and (max-width:767px) {
-    .footer-underline {
-        max-width: 335px;
+    .footer-flex {
+        max-width: 335ppx;
     }
 
     footer {
@@ -825,6 +853,6 @@ footer {
     }
 
     .icon-list {
-        padding-top: 30px;
+        padding-top: 28px;
     }
 }
