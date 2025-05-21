@@ -535,6 +535,17 @@ tr:first-child {
     padding-right: 93px;
 }
 
+@media screen and (max-width:955px) and (min-width:768px){
+    .information-title {
+        font-size: 1.3rem;
+    }
+
+    .information-text {
+        font-size: 1.2rem;
+    }
+}
+
+
 @media screen and (max-width:767px) {
     #information {
         padding: 37px 0 50px;
