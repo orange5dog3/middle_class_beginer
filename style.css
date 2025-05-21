@@ -22,7 +22,7 @@ html {
 
 /* 足跡-title */
 .title {
-    padding-bottom: 37px;
+    margin-bottom: 37px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,14 +35,14 @@ html {
     display: inline-block;
     width: 25.5px;
     height: 25px;
-    background-image: url("image/足跡_1.png");
+    background-image: url("image/footprint_1.svg");
     margin: 2px 19px 0px;
     background-size: contain;
 }
 
 /* inner */
 .inner {
-    max-width: 1020px;
+    max-width: 940px;
     padding-inline: 30px;
     margin: 0 auto;
 }
@@ -51,6 +51,11 @@ html {
 /* bg-green */
 .bg-green {
     background-color: rgba(13, 150, 160, 0.1);;
+}
+
+a:hover {
+    opacity: 0.5;
+    transition: 0.3s;
 }
 
 @media screen and (min-width:768px) {
@@ -74,10 +79,15 @@ html {
  ----------*/
 header {
     height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: #FFFFFF;
+    z-index: 1000;
+    top: 0;
+    left: 0;
 }
 
 .header-content {
-    max-width: 1080px;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -86,7 +96,7 @@ header {
     margin: 0 auto;
 }
 
-.header-title  {
+.header-title  a{
     display: flex;
     align-items: center;
     font-size: 1.8rem;
@@ -99,7 +109,7 @@ header {
     gap: 10px;
     font-size: 1.4rem;
     line-height:calc(33/14);
-    padding-top: 5px;
+    margin-top: 5px;
 }
 
 .nav-list a{
@@ -111,6 +121,14 @@ header {
 .foot-print img{
     width: 25.5px;
     display: block;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .header-content {
+        justify-content: left;
+        padding: 0 20px;
+        gap: 30px;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -133,14 +151,12 @@ header {
  main 
  ----------*/
 #main {
-    height:500px ;
+    width: 100%;
     position: relative;
 }
 
 .main-img img {
     width: 100%;
-    object-fit: cover;
-    height: 500px;
 }
 
 .main-textbox {
@@ -164,22 +180,38 @@ header {
     font-size: 4rem;
     line-height:calc(60/40);
     color:#0D96A0;
-    padding-top: 3px;
+    margin-top: 3px;
 }
 
-@media screen and (max-width:767px) {
-    #main {
-        height: 550px;
+@media screen and (min-width:600px) and (max-width:940px) {
+    .main-textbox {
+        width: 400px;
+        height: 170px;
+        top: auto;
+        bottom: 0;
+        left: 0;
     }
 
-    .main-img img {
-        height: 550px;
+    .main-textbox-content {
+        padding:15px 0 0 40px;
     }
 
+    .main-textbox-content p {
+        font-size: 2.3rem;
+    }
+
+    .main-textbox-content h1 {
+        font-size: 3.5rem;
+        line-height:calc(40/30);
+    }
+}
+
+@media screen and (max-width:599px) {
     .main-textbox {
         width: 311px;
         height: 148px;
-        top: 402px;
+        top: auto;
+        bottom: 0;
         left: 0;
     }
 
@@ -194,12 +226,8 @@ header {
     .main-textbox-content h1 {
         font-size: 3.0rem;
         line-height:calc(40/30);
-        padding-top: 3px;
     }
-    
 }
-
-
 
 /*----------
  greeting 
@@ -219,7 +247,7 @@ header {
 #greeting p {
     font-weight: 500;
     font-size: 1.8rem;
-    padding-top: 15px;
+    margin-top:15px;
 }
 
 .foot-print2 {
@@ -250,7 +278,7 @@ header {
         font-size: 1.6rem;
         line-height:calc(30/16);
         text-align: left;
-        padding-top:17px;
+        margin-top:17px;
     }
 }
 
@@ -270,7 +298,6 @@ header {
 
 
 .strength-unit {
-    max-width: 880px;
     display: flex;
     gap: 5.0%;
     margin: 0 auto;
@@ -288,13 +315,13 @@ header {
 .strength-text h4 {
     font-size: 2.2rem;
     line-height:calc(33/22);
-    padding-top: 46px;
+    margin-top: 46px;
 }
 
 .strength-text p {
     font-size: 1.8rem;
     font-weight: 500;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
   /* img */
@@ -321,13 +348,13 @@ header {
         text-align: center;
         font-size: 2.0rem;
         line-height:calc(30/20);
-        padding-top: 22px;
+        margin-top: 22px;
     }
 
     .strength-text p {
         font-size: 1.6rem;
         line-height:calc(30/16);
-        padding-top: 8px;
+        margin-top: 8px;
     }
 
     .strength-img {
@@ -360,9 +387,7 @@ header {
     padding: 60px 0;
 }
 
-
 .service-flex {
-    max-width: 880px;
     display: flex;
     gap: 5.6%;
     justify-content: center;
@@ -379,14 +404,14 @@ header {
     font-size: 2rem;
     line-height:calc(25/20);
     text-align: center;
-    padding-top: 13px;
+    margin-top: 13px;
 }
 
 .service-text p {
     font-size: 1.7rem;
     line-height:calc(30/17);
     font-weight: 500;
-    padding-top: 8px;
+    margin-top: 8px;
 }
 
 @media screen and (max-width:767px) {
@@ -407,13 +432,13 @@ header {
 
     .service-text h4 {
         line-height:calc(30/20);
-        padding-top: 25px;
+        margin-top: 25px;
     }
 
     .service-text p {
         font-size: 1.6rem;
         line-height:calc(30/16);
-        padding-top: 6px;
+        margin-top: 6px;
     }
 
     .service-item img {
@@ -433,11 +458,10 @@ header {
 }
 
 .information-flex {
-    max-width: 880px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 2px;
+    margin-top: 2px;
 }
 
 td {
@@ -518,7 +542,6 @@ tr:first-child {
 }
 
 .access-flex {
-    max-width: 880px;
     display: flex;
     gap: 5.2%;
     margin: 0 auto;
@@ -530,15 +553,15 @@ tr:first-child {
 }
 
 .map-frame {
-  width: 100%;
-  height: 300px;
-  border: 0;
+    width: 100%;
+    height: 300px;
+    border: 0;
 }
 
   /* text */
 .access-text {
     flex: 1;
-    padding-top: 4px;
+    margin-top: 4px;
 }
 
 .access-text h4 {
@@ -554,11 +577,11 @@ tr:first-child {
 }
 
 .access-address p{
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .access-tel p{
-    padding-top: 14px;
+    margin-top: 14px;
 }
 
 .tel-green {
@@ -569,15 +592,13 @@ tr:first-child {
 }
 
 .access-email p{
-    padding-top: 7px;
-    padding-bottom: 27px;
+    margin-top: 7px;
+    margin-bottom: 27px;
 }
 
 .underline {
     border: 1px solid #707070;
 }
-
-
 
 .access-workday {
     padding-top: 19px;
@@ -616,13 +637,13 @@ tr:first-child {
     .access-address p{
         font-size: 1.6rem;
         line-height:calc(24/16);
-        padding-top: 12px;
+        margin-top: 12px;
     }
 
     .access-tel p{
         font-size: 1.6rem;
         line-height: 2.7rem;
-        padding-top: 6px;
+        margin-top: 6px;
     }
 
     .tel-green {
@@ -633,7 +654,7 @@ tr:first-child {
     .access-email p{
         font-size: 1.6rem;
         line-height:calc(24/16);
-        padding-bottom: 15px;
+        margin-bottom: 15px;
     }
 
     .access-workday {
@@ -669,7 +690,6 @@ tr:first-child {
 
   /* form */
 .contact-flex {
-    max-width: 880px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -817,7 +837,7 @@ footer {
 .copyright {
     font-size: 2rem;
     line-height:calc(33/20);
-    padding-top: 27px;
+    margin-top: 27px;
 }
 
 .icon-list {
@@ -826,7 +846,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    padding-top: 8px;
+    margin-top: 8px;
 }
 
 .icon-img {
@@ -862,10 +882,10 @@ footer {
     .copyright {
         font-size: 1.6rem;
         line-height:calc(33/16);
-        padding-top: 13px;
+        margin-top: 13px;
     }
 
     .icon-list {
-        padding-top: 28px;
+        margin-top: 28px;
     }
 }
