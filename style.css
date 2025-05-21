@@ -358,11 +358,11 @@ header {
 
 @media screen and (max-width:767px) {
     #strength {
-        padding:45px 0 35px;
+        padding:47px 0 35px;
     }
 
     .strength-flex {
-        gap: 40px;
+        gap: 43px;
         padding-top: 1px;
     }
     
@@ -375,7 +375,7 @@ header {
         text-align: center;
         font-size: 2.0rem;
         line-height:calc(30/20);
-        margin-top: 22px;
+        margin-top: 19px;
     }
 
     .strength-text p {
@@ -405,7 +405,7 @@ header {
     }
 }
 
-@media screen and (min-width:320px) and (max-width:375px){
+@media screen and (min-width:320px) and (max-width:374px){
     .middle_none4 {
         display: block;
     }
@@ -535,6 +535,10 @@ tr:first-child {
     padding-right: 93px;
 }
 
+.info-row:hover {
+    opacity: 0.5;
+}
+
 @media screen and (max-width:955px) and (min-width:768px){
     .information-title {
         font-size: 1.3rem;
@@ -548,7 +552,11 @@ tr:first-child {
 
 @media screen and (max-width:767px) {
     #information {
-        padding: 37px 0 50px;
+        padding: 39px 0 50px;
+    }
+
+    .information-flex {
+        margin-top: 39px;
     }
 
     .information-flex tr{
@@ -589,6 +597,7 @@ tr:first-child {
     display: flex;
     gap: 5.2%;
     margin: 0 auto;
+    align-items: stretch;
 }
 
   /* img */
@@ -598,8 +607,7 @@ tr:first-child {
 
 .map-frame {
     width: 100%;
-    height: 300px;
-    border: 0;
+    height: 100%;
 }
 
   /* text */
@@ -655,6 +663,10 @@ tr:first-child {
     padding-bottom: 19px;
 }
 
+.middle_none5 {
+    display: none;
+}
+
 @media screen and (max-width:767px) {
     #access {
         padding: 40px 0 50px;
@@ -670,7 +682,7 @@ tr:first-child {
     }
 
     .map-frame {
-        height: 222px;
+        aspect-ratio: 335 / 222;
     }
 
     .underline {
@@ -688,6 +700,10 @@ tr:first-child {
         font-size: 1.6rem;
         line-height: 2.7rem;
         margin-top: 6px;
+    }
+
+    .sp-only {
+        display: block;
     }
 
     .tel-green {
@@ -714,6 +730,18 @@ tr:first-child {
         padding-top: 0;
         padding-left: 0;
         padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .middle_none5 {
+        display: block;
+    }
+}
+
+@media screen and (min-width:768px) and  (max-width:900px) {
+    .middle_none5 {
+        display: block;
     }
 }
 
