@@ -137,7 +137,7 @@ header {
         margin-left: 20px;
     }
 
-    .header-title {
+    .header-title a{
         font-size: 2.0rem;
         line-height:calc(33/20);
     }
@@ -153,6 +153,7 @@ header {
 #main {
     width: 100%;
     position: relative;
+    padding-top: 50px;
 }
 
 .main-img img {
@@ -164,7 +165,7 @@ header {
     background-color: rgba(255, 255, 255, 0.702);
     width: 492px;
     height: 210px;
-    top: 152px;
+    top: 202px;
     left: 0;
 }
 
@@ -211,12 +212,12 @@ header {
         width: 311px;
         height: 148px;
         top: auto;
-        bottom: 0;
+        bottom: 5px;
         left: 0;
     }
 
     .main-textbox-content {
-        padding:15px 0 0 20px;
+        padding:14px 0 0 20px;
     }
 
     .main-textbox-content p {
@@ -233,7 +234,7 @@ header {
  greeting 
  ----------*/
 #greeting {
-    padding:60px 0;
+    padding:55px 0 60px;
     text-align: center;
     position: relative;
 }
@@ -250,17 +251,25 @@ header {
     margin-top:15px;
 }
 
+.greeting-inner {
+    position: relative;
+}
+
 .foot-print2 {
     position: absolute;
     display: block;
     width: 83.75px;
-    left: 85%;
-    top: 61%;
+    left: 90%;
+    top: 69%;
 }
 
-@media screen and (max-width:767px) {
+.middle_none3 {
+    display: none;
+}
+
+@media screen and (max-width:900px) {
     #greeting {
-        padding: 49px 0 40px;
+        padding: 43px 0 40px;
     }
     
     #greeting h2 {
@@ -271,14 +280,28 @@ header {
     .foot-print2 {
         width: 68.35px;
         left: 74%;
-        top: 71%;
+        top: 75%;
     }
 
     #greeting p {
         font-size: 1.6rem;
         line-height:calc(30/16);
-        text-align: left;
         margin-top:17px;
+    }
+
+    .middle_none3 {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width:680px) {
+    #greeting p {
+        text-align: left;
+    }
+
+    .middle_none3 {
+        display: none;
     }
 }
 
@@ -301,6 +324,7 @@ header {
     display: flex;
     gap: 5.0%;
     margin: 0 auto;
+    align-items: center;
 }
 
 .row-reverse {
@@ -315,7 +339,6 @@ header {
 .strength-text h4 {
     font-size: 2.2rem;
     line-height:calc(33/22);
-    margin-top: 46px;
 }
 
 .strength-text p {
@@ -327,6 +350,10 @@ header {
   /* img */
 .strength-img {
     width: 50%;
+}
+
+.middle_none4 {
+    display: none
 }
 
 @media screen and (max-width:767px) {
@@ -366,15 +393,21 @@ header {
     }
 }
 
+@media screen and (min-width:768px) and (max-width:953px){
+    .middle_none2 {
+        display: none;
+    }
+}
+
 @media screen and (min-width:376px) and (max-width:767px){
     .middle_none1 {
         display: none;
     }
 }
 
-@media screen and (min-width:768px) and (max-width:953px){
-    .middle_none2 {
-        display: none;
+@media screen and (min-width:320px) and (max-width:375px){
+    .middle_none4 {
+        display: block;
     }
 }
 
