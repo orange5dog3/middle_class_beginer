@@ -309,14 +309,14 @@ header {
  strength 
 ----------*/
 #strength {
-    padding: 60px 0;
+    padding: 60px 0 63px;
 }
 
 .strength-flex {
     display: flex;
     flex-direction:column;
     gap: 45px;
-    padding-top: 6px;
+    padding-top: 2px;
 }
 
 
@@ -494,7 +494,6 @@ header {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 2px;
 }
 
 td {
@@ -590,7 +589,7 @@ tr:first-child {
  access 
  ----------*/
 #access {
-    padding: 60px 0 65px;
+    padding: 60px 0 70px;
 }
 
 .access-flex {
@@ -613,7 +612,7 @@ tr:first-child {
   /* text */
 .access-text {
     flex: 1;
-    margin-top: 4px;
+    margin-top: 6px;
 }
 
 .access-text h4 {
@@ -669,7 +668,7 @@ tr:first-child {
 
     .access-flex {
         flex-direction: column;
-        gap: 25px;
+        gap: 24px;
     }   
 
     .access-img {
@@ -742,7 +741,7 @@ tr:first-child {
  contact 
 ----------*/
 #contact {
-    padding: 65px 0 80px;
+    padding: 60px 0 80px;
 }
 
 #contact p{
@@ -922,7 +921,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 2px;
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 .icon-list a img{
@@ -937,11 +936,11 @@ footer {
 
 @media screen and (max-width:767px) {
     .footer-flex {
-        max-width: 335ppx;
+        max-width: 335px;
     }
 
     footer {
-        padding: 45px 0;
+        padding: 44px 0;
     }
 
 
