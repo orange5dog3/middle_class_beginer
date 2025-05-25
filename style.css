@@ -22,7 +22,6 @@ html {
 
 /* 足跡-title */
 .title {
-    margin-bottom: 37px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +87,7 @@ header {
 }
 
 .header-content {
+    max-width: 1080px;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -101,6 +101,7 @@ header {
     align-items: center;
     font-size: 1.8rem;
     gap: 9.5px;
+    height: 50px;
 }
 
 .nav-list ul{
@@ -109,13 +110,13 @@ header {
     gap: 10px;
     font-size: 1.4rem;
     line-height:calc(33/14);
-    margin-top: 5px;
 }
 
 .nav-list a{
     display: flex;
     align-items: center;
     height: 50px;
+    padding-top: 5px;
 }
 
 .foot-print img{
@@ -125,7 +126,6 @@ header {
 
 @media screen and (min-width:768px) and (max-width:1024px) {
     .header-content {
-        justify-content: left;
         padding: 0 20px;
         gap: 30px;
     }
@@ -158,6 +158,7 @@ header {
 
 .main-img img {
     width: 100%;
+    display: block;
 }
 
 .main-textbox {
@@ -165,7 +166,8 @@ header {
     background-color: rgba(255, 255, 255, 0.702);
     width: 492px;
     height: 210px;
-    top: 202px;
+    top: 50%;
+    transform: translateY(-35%);
     left: 0;
 }
 
@@ -184,13 +186,10 @@ header {
     margin-top: 3px;
 }
 
-@media screen and (min-width:600px) and (max-width:940px) {
+@media screen and (min-width:768px) and (max-width:940px) {
     .main-textbox {
         width: 400px;
         height: 170px;
-        top: auto;
-        bottom: 0;
-        left: 0;
     }
 
     .main-textbox-content {
@@ -207,12 +206,12 @@ header {
     }
 }
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:767px) {
     .main-textbox {
         width: 311px;
         height: 148px;
         top: auto;
-        bottom: 5px;
+        bottom: 0;
         left: 0;
     }
 
@@ -316,7 +315,7 @@ header {
     display: flex;
     flex-direction:column;
     gap: 45px;
-    padding-top: 6px;
+    margin-top: 40px;
 }
 
 
@@ -352,7 +351,8 @@ header {
     width: 50%;
 }
 
-.middle_none4 {
+.middle_none4,
+.middle_none7 {
     display: none
 }
 
@@ -405,13 +405,16 @@ header {
     }
 }
 
-@media screen and (min-width:320px) and (max-width:374px){
-    .middle_none4 {
+@media screen and (max-width:375px){
+    .middle_none4,
+    .middle_none7 {
         display: block;
     }
+
+    .middle_none1 {
+        display: none;
+    }
 }
-
-
 
 /*----------
  service 
@@ -425,7 +428,7 @@ header {
     gap: 5.6%;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 7px;
+    margin-top: 45px;
 }
 
 .service-item {
@@ -494,7 +497,7 @@ header {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 2px;
+    margin-top: 39px;
 }
 
 td {
@@ -598,6 +601,7 @@ tr:first-child {
     gap: 5.2%;
     margin: 0 auto;
     align-items: stretch;
+    margin-top: 37px;
 }
 
   /* img */
@@ -750,7 +754,7 @@ tr:first-child {
     font-weight: 500;
     font-size: 1.7rem;
     line-height:calc(30/17);
-    margin-top: -18px;
+    margin-top: 20px;
 }
 
   /* form */
