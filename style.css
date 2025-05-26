@@ -213,6 +213,7 @@ header {
         top: auto;
         bottom: 0;
         left: 0;
+        transform: none;
     }
 
     .main-textbox-content {
@@ -233,7 +234,7 @@ header {
  greeting 
  ----------*/
 #greeting {
-    padding:55px 0 60px;
+    padding:60px 0 60px;
     text-align: center;
     position: relative;
 }
@@ -268,7 +269,7 @@ header {
 
 @media screen and (max-width:900px) {
     #greeting {
-        padding: 43px 0 40px;
+        padding: 50px 0 40px;
     }
     
     #greeting h2 {
@@ -358,12 +359,12 @@ header {
 
 @media screen and (max-width:767px) {
     #strength {
-        padding:47px 0 35px;
+        padding:45px 0 35px;
     }
 
     .strength-flex {
-        gap: 43px;
-        padding-top: 1px;
+        gap: 40px;
+        margin-top: 35px;
     }
     
     .strength-unit {
@@ -375,13 +376,13 @@ header {
         text-align: center;
         font-size: 2.0rem;
         line-height:calc(30/20);
-        margin-top: 19px;
+        margin-top: 25px;
     }
 
     .strength-text p {
         font-size: 1.6rem;
         line-height:calc(30/16);
-        margin-top: 8px;
+        margin-top: 5px;
     }
 
     .strength-img {
@@ -405,14 +406,22 @@ header {
     }
 }
 
-@media screen and (max-width:375px){
+@media screen and (min-width:351px) and (max-width:375px){
+    .middle_none1 {
+        display: block;
+    }
+}
+
+@media screen and (max-width:350px){
+    .middle_none1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:374px){
     .middle_none4,
     .middle_none7 {
         display: block;
-    }
-
-    .middle_none1 {
-        display: none;
     }
 }
 
@@ -457,7 +466,7 @@ header {
 
     .service-flex {
         flex-direction: column;
-        padding-top: 2px;
+        margin-top: 40px;
         gap: 40px;
     }
 
@@ -495,25 +504,22 @@ header {
 
 .information-flex {
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 2px;
+    flex-direction: column;
+    margin-top: 39px;
 }
 
-td {
-    vertical-align: middle;
-    padding-top: 14.5px;
-    padding-bottom: 14.5px;
-}
-
-
-  /* 線 */
-tr {
+.info-row {
     border-bottom: 1px solid #707070;
 }
 
-tr:first-child {
+.info-row:first-child {
     border-top: 1px solid #707070;
+}
+
+.info-row a{
+    display: flex;
+    padding-top: 18px;
+    padding-bottom: 11px;
 }
 
   /* 文字大きさ色 */
@@ -528,19 +534,18 @@ tr:first-child {
     line-height:calc(25/20);
     color: #0D96A0;
     padding-left: 25px;
+    width: 235px;
 }
 
 .information-text {
+    flex: 1;
     font-size: 1.7rem;
     line-height:calc(30/17);
     font-weight: 500;    
-    padding-left: 50px;
-    padding-right: 93px;
 }
 
-.info-row:hover {
+.info-row:hover a{
     opacity: 0.5;
-    transition: 0.3;
 }
 
 @media screen and (max-width:955px) and (min-width:768px){
@@ -556,37 +561,47 @@ tr:first-child {
 
 @media screen and (max-width:767px) {
     #information {
-        padding: 39px 0 50px;
+        padding: 38px 0 50px;
     }
 
     .information-flex {
-        margin-top: 39px;
+        margin-top: 40px;
     }
 
-    .information-flex tr{
+    .information-flex a{
         display: flex;
         flex-direction:column;
-        padding: 27.5px 10px 27.5px 10px;
+        /* padding: 27.5px 10px 27.5px 10px; */
     }
 
-    .information-flex tr:last-of-type {
+    .info-row {
+        padding-inline: 10px;
+    }
+
+    .info-row:last-of-type{
         padding-right: 3px;
     }
 
-    .information-day {
+    .information-day,
+    .information-title,
+    .information-text {
         padding: 0;
     }
 
+
+    .information-day {
+        margin-top: 10px;
+    }
+
     .information-title {
-        padding: 0;
-        margin-top: 3px;
+        margin-top: 2px;
     }
 
     .information-text {
         font-size: 1.6rem;
         line-height:calc(24/16);
-        padding: 0;
-        margin-top: 5px;
+        margin-top: 6px;
+        margin-bottom: 16px;
     }
 }
 
