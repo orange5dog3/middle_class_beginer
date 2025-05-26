@@ -309,7 +309,7 @@ header {
  strength 
 ----------*/
 #strength {
-    padding: 60px 0 63px;
+    padding: 60px 0;
 }
 
 .strength-flex {
@@ -546,18 +546,8 @@ header {
 
 .info-row:hover a{
     opacity: 0.5;
+    transition: 0.3s;
 }
-
-@media screen and (max-width:955px) and (min-width:768px){
-    .information-title {
-        font-size: 1.3rem;
-    }
-
-    .information-text {
-        font-size: 1.2rem;
-    }
-}
-
 
 @media screen and (max-width:767px) {
     #information {
@@ -608,7 +598,7 @@ header {
  access 
  ----------*/
 #access {
-    padding: 60px 0 70px;
+    padding: 60px 0 65px;
 }
 
 .access-flex {
@@ -632,7 +622,7 @@ header {
   /* text */
 .access-text {
     flex: 1;
-    margin-top: 6px;
+    margin-top: 4px;
 }
 
 .access-text h4 {
@@ -688,7 +678,7 @@ header {
 
     .access-flex {
         flex-direction: column;
-        gap: 24px;
+        gap: 25px;
     }   
 
     .access-img {
@@ -761,7 +751,7 @@ header {
  contact 
 ----------*/
 #contact {
-    padding: 60px 0 80px;
+    padding: 65px 0 80px;
 }
 
 #contact p{
@@ -951,11 +941,11 @@ footer {
 
 @media screen and (max-width:767px) {
     .footer-flex {
-        max-width: 335px;
+        max-width: 335ppx;
     }
 
     footer {
-        padding: 44px 0;
+        padding: 45px 0;
     }
 
 
