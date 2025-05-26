@@ -561,7 +561,6 @@ header {
     .information-flex a{
         display: flex;
         flex-direction:column;
-        /* padding: 27.5px 10px 27.5px 10px; */
     }
 
     .info-row {
@@ -775,29 +774,28 @@ header {
 
 .form-group {
     display: flex;
-    gap: 3.4%;
 }
 
 .form-group label{
-    width: 16%;
+    width: 170px;
     font-size: 2rem;
     line-height:calc(33/20);
 }
 
-.form-group input {
-    flex: 1;
-    background-color:#FFFFFF;
-    padding: 10px;
-}
-
+.form-group input,
 .form-group textarea {
     flex: 1;
     background-color:#FFFFFF;
-    min-height: 300px;
-    padding: 10px;
-    resize: vertical;
+    padding: 5px 10px;
+    font-size: 1.6rem;
 }
 
+
+
+.form-group textarea {
+    min-height: 300px;
+    resize: vertical;
+}
 
   /* button */
 button {
@@ -811,7 +809,7 @@ button {
     transition: 0.3s;
     display: block;
     text-align: center;
-    margin:47px auto 0;
+    margin:45px auto 0;
     padding-bottom: 3px;
     cursor: pointer;
 }
@@ -819,12 +817,6 @@ button {
 button:hover {
     background-color: #FFFFFF;
     color: #0D96A0;
-}
-
-@media screen and (min-width:768px) and (max-width:950px) {
-    label[for="email"] {
-        font-size: 1.55rem;
-    }
 }
 
 
@@ -837,7 +829,7 @@ button:hover {
         text-align: left;
         font-size: 1.6rem;
         line-height:calc(30/16);
-        margin-top: 0;
+        margin-top: 37px;
     }
 
     .contact-flex {
@@ -923,7 +915,7 @@ footer {
 .copyright {
     font-size: 2rem;
     line-height:calc(33/20);
-    margin-top: 27px;
+    margin-top: 25px;
 }
 
 .icon-list {
@@ -932,12 +924,14 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 2px;
-    margin-top: 8px;
+    margin-top: 4px;
 }
 
-.icon-list a img{
+.icon-list a{
+    display: flex;
+    align-items: center;
     width: 32px;
-    padding-inline: 5px;
+    padding: 5px;
 }
 
 .middle_none6 {
@@ -978,7 +972,7 @@ footer {
     }
 
     .icon-list {
-        margin-top: 28px;
+        margin-top: 23px;
     }
 }
 
