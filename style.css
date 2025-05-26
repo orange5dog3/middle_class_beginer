@@ -564,8 +564,12 @@ header {
         /* padding: 27.5px 10px 27.5px 10px; */
     }
 
-    .info-row a {
+    .info-row {
         padding-inline: 10px;
+    }
+
+    .info-row:last-of-type{
+        padding-right: 3px;
     }
 
     .information-day,
