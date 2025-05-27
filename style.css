@@ -39,6 +39,15 @@ html {
     background-size: contain;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
+
+section {
+  scroll-margin-top: 50px;
+}
+
 /* inner */
 .inner {
     max-width: 940px;
@@ -182,7 +191,7 @@ header {
     font-size: 2.5rem;
 }
 
-.main-textbox-content h1 {
+.main-textbox-content h2 {
     font-size: 4rem;
     line-height:calc(60/40);
     color:#0D96A0;
@@ -203,7 +212,7 @@ header {
         font-size: 2.3rem;
     }
 
-    .main-textbox-content h1 {
+    .main-textbox-content h2 {
         font-size: 3.5rem;
         line-height:calc(40/30);
     }
@@ -339,7 +348,7 @@ header {
     flex: 1;
 }
 
-.strength-text h4 {
+.strength-text h3 {
     font-size: 2.2rem;
     line-height:calc(33/22);
 }
@@ -448,7 +457,7 @@ header {
 }
 
   /* text */
-.service-text h4 {
+.service-text h3 {
     font-size: 2rem;
     line-height:calc(25/20);
     text-align: center;
@@ -521,18 +530,19 @@ header {
 
 .info-row a{
     display: flex;
-    padding-top: 18px;
-    padding-bottom: 11px;
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
+    align-items: center;
 }
 
   /* 文字大きさ色 */
-.information-day {
+.info-row time {
     font-size: 1.7rem;
     line-height:calc(25/17);
     padding-left: 18.5px;
 }
 
-.information-title {
+.info-row h3 {
     font-size: 2rem;
     line-height:calc(25/20);
     color: #0D96A0;
@@ -540,15 +550,11 @@ header {
     width: 235px;
 }
 
-.information-text {
+.info-row p {
     flex: 1;
     font-size: 1.7rem;
     line-height:calc(30/17);
     font-weight: 500;    
-}
-
-.info-row:hover a{
-    opacity: 0.5;
 }
 
 @media screen and (max-width:767px) {
@@ -573,22 +579,22 @@ header {
         padding-right: 3px;
     }
 
-    .information-day,
-    .information-title,
-    .information-text {
+    .info-row time,
+    .info-row h3,
+    .info-row p {
         padding: 0;
     }
 
 
-    .information-day {
+    .info-row time {
         margin-top: 10px;
     }
 
-    .information-title {
+    .info-row h3 {
         margin-top: 2px;
     }
 
-    .information-text {
+    .info-row p {
         font-size: 1.6rem;
         line-height:calc(24/16);
         margin-top: 6px;
