@@ -236,7 +236,7 @@ header {
         font-size: 2.0rem;
     }
 
-    .main-textbox-content h1 {
+    .main-textbox-content h2 {
         font-size: 3.0rem;
         line-height:calc(40/30);
     }
@@ -384,7 +384,7 @@ header {
         margin: 0;
     }
 
-    .strength-text h4 {
+    .strength-text h3 {
         text-align: center;
         font-size: 2.0rem;
         line-height:calc(30/20);
