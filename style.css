@@ -375,7 +375,7 @@ header {
     }
 
     .strength-flex {
-        gap: 40px;
+        gap: 42px;
         margin-top: 35px;
     }
     
@@ -388,13 +388,13 @@ header {
         text-align: center;
         font-size: 2.0rem;
         line-height:calc(30/20);
-        margin-top: 25px;
+        margin-top: 28px;
     }
 
     .strength-text p {
         font-size: 1.6rem;
         line-height:calc(30/16);
-        margin-top: 5px;
+        margin-top: 7px;
     }
 
     .strength-img {
@@ -473,7 +473,7 @@ header {
 
 @media screen and (max-width:767px) {
     #service {
-        padding: 40px 0;
+        padding: 38px 0;
     }
 
     .service-flex {
@@ -487,9 +487,9 @@ header {
         padding-top: -7px;
     }
 
-    .service-text h4 {
+    .service-text h3 {
         line-height:calc(30/20);
-        margin-top: 25px;
+        margin-top: 30px;
     }
 
     .service-text p {
@@ -559,7 +559,7 @@ header {
 
 @media screen and (max-width:767px) {
     #information {
-        padding: 38px 0 50px;
+        padding: 40px 0 50px;
     }
 
     .information-flex {
@@ -571,8 +571,16 @@ header {
         flex-direction:column;
     }
 
+    .info-row a {
+        display: block;
+    }
+
     .info-row {
         padding-inline: 10px;
+    }
+
+    .info-row:nth-of-type(4) p{
+        padding-right: 15px;
     }
 
     .info-row:last-of-type{
@@ -583,6 +591,7 @@ header {
     .info-row h3,
     .info-row p {
         padding: 0;
+        display: block;
     }
 
 
@@ -601,6 +610,7 @@ header {
         margin-bottom: 16px;
     }
 }
+
 
 /*----------
  access 
@@ -633,7 +643,7 @@ header {
     margin-top: 4px;
 }
 
-.access-text h4 {
+.access-text h3 {
     font-size: 2.2rem;
     line-height:calc(33/22);
     margin-top: -2px;
@@ -686,7 +696,7 @@ header {
 
     .access-flex {
         flex-direction: column;
-        gap: 25px;
+        gap: 24px;
     }   
 
     .access-img {
@@ -830,14 +840,14 @@ button:hover {
 
 @media screen and (max-width:767px) {
     #contact {
-        padding: 37px 0 50px;
+        padding: 40px 0 50px;
     }
     
     #contact p{
         text-align: left;
         font-size: 1.6rem;
         line-height:calc(30/16);
-        margin-top: 37px;
+        margin-top: 35px;
     }
 
     .contact-flex {
