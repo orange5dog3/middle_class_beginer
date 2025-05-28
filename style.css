@@ -321,13 +321,13 @@ header {
  strength 
 ----------*/
 #strength {
-    padding: 60px 0;
+    padding: 60px 0 70px;
 }
 
 .strength-flex {
     display: flex;
     flex-direction:column;
-    gap: 45px;
+    gap: 50px;
     margin-top: 40px;
 }
 
