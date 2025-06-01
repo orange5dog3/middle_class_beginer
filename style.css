@@ -285,10 +285,6 @@ header {
     bottom: 10%;
 }
 
-.middle_none3 {
-    display: none;
-}
-
 @media screen and (max-width:767px) {
     #greeting {
         padding: 50px 0 40px;
@@ -632,10 +628,6 @@ header {
     margin-bottom: 14px;
 }
 
-.middle_none5 {
-    display: none;
-}
-
 @media screen and (max-width:767px) {
     #access {
         padding: 40px 0 50px;
@@ -884,10 +876,6 @@ footer {
     padding: 5px;
 }
 
-.middle_none6 {
-    display: none;
-}
-
 
 @media screen and (max-width:767px) {
     .footer-flex {
@@ -924,10 +912,5 @@ footer {
     .icon-list {
         margin-top: 23px;
     }
-}
 
-@media screen and (max-width:370px) {
-    .middle_none6 {
-        display: block;
-    }
 }
