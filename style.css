@@ -284,8 +284,8 @@ header {
     position: absolute;
     display: block;
     width: 83.75px;
-    right: 0;
-    bottom: -18px;
+    right: 5px;
+    bottom: -28px;
 }
 
 @media screen and (max-width:767px) {
