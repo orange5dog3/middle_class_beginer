@@ -443,7 +443,6 @@ header {
 
     .service-item {
         width: 100%;
-        padding-top: -7px;
     }
 
     .service-text h3 {
@@ -863,7 +862,7 @@ footer {
     margin-top: 25px;
 }
 
-.icon-list {
+.icon-list ul {
     display: flex;
     list-style: none;
     justify-content: center;
@@ -882,7 +881,7 @@ footer {
 
 @media screen and (max-width:767px) {
     .footer-flex {
-        max-width: 335ppx;
+        max-width: 335px;
     }
 
     footer {
@@ -913,7 +912,7 @@ footer {
     }
 
     .icon-list {
-        margin-top: 23px;
+        margin-top: 20px;
     }
 
 }
