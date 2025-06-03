@@ -561,7 +561,7 @@ header {
  access 
  ----------*/
 #access {
-    padding: 60px 0 65px;
+    padding: 60px 0 70px;
 }
 
 .access-flex {
@@ -694,7 +694,7 @@ header {
  contact 
 ----------*/
 #contact {
-    padding: 65px 0 80px;
+    padding: 60px 0 80px;
 }
 
 #contact p{
@@ -712,7 +712,7 @@ header {
     flex-direction: column;
     margin: 0 auto;
     gap: 30px;
-    margin-top: 46px;
+    margin-top: 41px;
 }
 
 .form-group {
@@ -723,6 +723,7 @@ header {
     width: 170px;
     font-size: 2rem;
     line-height:calc(33/20);
+    padding-top: 5px;
 }
 
 .form-group input,
@@ -753,7 +754,7 @@ button {
     transition: 0.3s;
     display: block;
     text-align: center;
-    margin:45px auto 0;
+    margin:50px auto 0;
     padding-bottom: 3px;
     cursor: pointer;
 }
